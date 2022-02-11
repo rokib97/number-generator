@@ -44,6 +44,7 @@ document.getElementById("double-btn").addEventListener("click", function () {
   outputElement.innerText = inputValue * 2; */
 });
 document.getElementById("triple-btn").addEventListener("click", function () {
+  setRGB();
   const inputValue = getInputValue("input-field");
   if (isNaN(inputValue) == false) {
     calculate(inputValue, false);
